@@ -1,0 +1,13 @@
+{
+	"item.bricks_and_beats.miner_zombie_slow_spawn_egg": "Miner Zombie Spawn Egg (Slow)",
+	"item.bricks_and_beats.miner_zombie_medium_spawn_egg": "Miner Zombie Spawn Egg (Medium)",
+	"item.bricks_and_beats.miner_zombie_fast_spawn_egg": "Miner Zombie Spawn Egg (Fast)",
+	"entity.bricks_and_beats.miner_zombie_slow": "Miner Zombie (Slow)",
+	"entity.bricks_and_beats.miner_zombie_medium": "Miner Zombie (Medium)",
+	"entity.bricks_and_beats.miner_zombie_fast": "Miner Zombie (Fast)",
+	"enchantment.bricks_and_beats.reaping": "Reaping",
+	"enchantment.bricks_and_beats.weeding": "Weeding",
+	"enchantment.bricks_and_beats.scorching": "Scorching",
+	"enchantment.bricks_and_beats.hamstring": "Hamstring",
+	"entity.bricks_and_beats.thrown_brick": "Thrown Brick"
+}

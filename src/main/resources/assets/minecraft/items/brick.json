@@ -1,0 +1,6 @@
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "bricks_and_beats:item/brick"
+	}
+}

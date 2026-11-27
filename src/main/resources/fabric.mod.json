@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "bricks_and_beats",
+	"version": "${version}",
+	"name": "Bricks and Beats",
+	"description": "Копающие зомби, яйца призыва и мотыга-оружие с собственными зачарованиями.",
+	"authors": [
+		"Bricks and Beats"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bricks_and_beats/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.bricksandbeats.BricksAndBeats",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.bricksandbeats.client.BricksAndBeatsClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.bricksandbeats.client.BricksAndBeatsDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}

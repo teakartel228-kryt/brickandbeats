@@ -1,0 +1,23 @@
+{
+	"description": { "translate": "enchantment.bricks_and_beats.scorching" },
+	"supported_items": "#minecraft:hoes",
+	"primary_items": "#minecraft:hoes",
+	"weight": 3,
+	"max_level": 2,
+	"min_cost": { "base": 10, "per_level_above_first": 20 },
+	"max_cost": { "base": 60, "per_level_above_first": 20 },
+	"anvil_cost": 4,
+	"slots": ["mainhand"],
+	"effects": {
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:ignite",
+					"duration": { "type": "minecraft:linear", "base": 4.0, "per_level_above_first": 4.0 }
+				}
+			}
+		]
+	}
+}

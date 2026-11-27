@@ -1,0 +1,13 @@
+{
+	"item.bricks_and_beats.miner_zombie_slow_spawn_egg": "Яйцо призыва: зомби-копатель (медленный)",
+	"item.bricks_and_beats.miner_zombie_medium_spawn_egg": "Яйцо призыва: зомби-копатель (средний)",
+	"item.bricks_and_beats.miner_zombie_fast_spawn_egg": "Яйцо призыва: зомби-копатель (быстрый)",
+	"entity.bricks_and_beats.miner_zombie_slow": "Зомби-копатель (медленный)",
+	"entity.bricks_and_beats.miner_zombie_medium": "Зомби-копатель (средний)",
+	"entity.bricks_and_beats.miner_zombie_fast": "Зомби-копатель (быстрый)",
+	"enchantment.bricks_and_beats.reaping": "Жатва",
+	"enchantment.bricks_and_beats.weeding": "Прополка",
+	"enchantment.bricks_and_beats.scorching": "Выжигание",
+	"enchantment.bricks_and_beats.hamstring": "Подсечка",
+	"entity.bricks_and_beats.thrown_brick": "Брошенный кирпич"
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "bricks_and_beats:item/miner_zombie_fast_spawn_egg"
+	}
+}
