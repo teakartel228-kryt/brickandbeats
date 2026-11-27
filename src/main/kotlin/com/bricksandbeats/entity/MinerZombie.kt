@@ -14,6 +14,7 @@ import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.ai.goal.Goal
 import net.minecraft.world.entity.monster.zombie.Zombie
 import net.minecraft.world.item.ItemStack
+import net.minecraft.world.item.component.SwingAnimation
 import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.gamerules.GameRules
@@ -108,7 +109,7 @@ class MinerZombie(
 			progress += mob.tier.speedMultiplier * toolSpeed / hardness / (if (canHarvest) 30f else 100f)
 
 			if (mob.tickCount % 6 == 0) {
-				mob.swing(InteractionHand.MAIN_HAND)
+				mob.swing(InteractionHand.MAIN_HAND, SwingAnimation.DEFAULT)
 				level.playSound(null, pos, state.soundType.hitSound, SoundSource.HOSTILE, 0.6f, 0.75f)
 				if (level is ServerLevel) ZombieHive.noise(level, Vec3.atCenterOf(pos), ZombieHive.LOUDNESS_MINING, 60)
 			}

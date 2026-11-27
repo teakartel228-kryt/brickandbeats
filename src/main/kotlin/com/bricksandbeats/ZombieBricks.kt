@@ -9,6 +9,7 @@ import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.Mob
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
+import net.minecraft.world.item.component.SwingAnimation
 import kotlin.math.sqrt
 
 /**
@@ -62,7 +63,7 @@ object ZombieBricks {
 		brick.shoot(dx, dy + horizontal * 0.2, dz, THROW_SPEED, INACCURACY)
 		level.addFreshEntity(brick)
 
-		mob.swing(InteractionHand.OFF_HAND)
+		mob.swing(InteractionHand.OFF_HAND, SwingAnimation.DEFAULT)
 		level.playSound(null, mob.x, mob.y, mob.z, SoundEvents.SNOWBALL_THROW, SoundSource.HOSTILE, 0.8f, 0.8f)
 
 		stack.shrink(1)

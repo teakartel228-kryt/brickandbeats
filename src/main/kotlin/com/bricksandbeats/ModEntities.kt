@@ -3,7 +3,7 @@ package com.bricksandbeats
 import com.bricksandbeats.entity.MinerTier
 import com.bricksandbeats.entity.MinerZombie
 import com.bricksandbeats.entity.ThrownBrick
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry
+import net.fabricmc.fabric.api.`object`.builder.v1.entity.FabricDefaultAttributeRegistry
 import net.minecraft.core.Registry
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries

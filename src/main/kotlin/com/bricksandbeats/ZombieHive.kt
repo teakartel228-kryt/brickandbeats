@@ -7,7 +7,7 @@ import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents
 import net.minecraft.resources.ResourceKey
 import net.minecraft.server.level.ServerLevel
 import net.minecraft.world.entity.Entity
-import net.minecraft.world.entity.EntityType
+import net.minecraft.world.entity.EntityTypes
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.Mob
 import net.minecraft.world.entity.player.Player
@@ -54,8 +54,8 @@ object ZombieHive {
 	fun isHiveMember(entity: Entity): Boolean {
 		if (entity !is Mob) return false
 		val t = entity.type
-		return t == EntityType.ZOMBIE || t == EntityType.HUSK || t == EntityType.DROWNED ||
-			t == EntityType.ZOMBIE_VILLAGER ||
+		return t == EntityTypes.ZOMBIE || t == EntityTypes.HUSK || t == EntityTypes.DROWNED ||
+			t == EntityTypes.ZOMBIE_VILLAGER ||
 			t == ModEntities.MINER_ZOMBIE_SLOW || t == ModEntities.MINER_ZOMBIE_MEDIUM ||
 			t == ModEntities.MINER_ZOMBIE_FAST
 	}
@@ -90,10 +90,10 @@ object ZombieHive {
 				hive.mobs.remove(entity as Mob)
 				hive.investigating.remove(entity.id)
 				hive.nextThrow.remove(entity.id)
-			} else if (entity.type == EntityType.TNT && entity.removalReason == Entity.RemovalReason.DISCARDED) {
+			} else if (entity.type == EntityTypes.TNT && entity.removalReason == Entity.RemovalReason.DISCARDED) {
 				// Динамит исчезает ровно в момент взрыва.
 				noise(world, entity.position(), LOUDNESS_EXPLOSION)
-			} else if (entity.type == EntityType.CREEPER &&
+			} else if (entity.type == EntityTypes.CREEPER &&
 				entity.removalReason == Entity.RemovalReason.DISCARDED &&
 				world.getNearestPlayer(entity.x, entity.y, entity.z, 24.0, false) != null
 			) {

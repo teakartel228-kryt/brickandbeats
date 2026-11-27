@@ -13,7 +13,7 @@ import net.minecraft.world.item.Items
 /**
  * Обычные кирпичи (minecraft:brick) и незерские (minecraft:nether_brick) можно кидать: ПКМ.
  * Работает через событие Fabric, без новых предметов и миксинов.
- * Внешний вид — кастомная 3D-модель, которая подменяет ванильную (assets/minecraft/items/*.json).
+ * Внешний вид — кастомная 3D-модель, которая подменяет ванильную (папка assets/minecraft/items).
  */
 object BrickThrowing {
 	const val THROW_SPEED = 1.3f
